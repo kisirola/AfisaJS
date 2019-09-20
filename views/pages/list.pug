@@ -1,0 +1,30 @@
+extends ../layouts/main
+
+block content
+  h1= title
+
+  #div-list(class='grid-x grid-padding-x')
+
+    each item in list
+      - let data = item.data;
+      - let view = item.view;
+      div(class='large-2 medium-3 small-6')
+        div(class="item")
+          div(class="content")
+            div(class="header")
+              div(class="ev-item--image" style="background-image: url('#{item.data.itemImage}')")
+                imgg(src="#{item.data.itemImage}"  width="10rem" height="16rem" )
+                div(
+                  class="ev-item--calender"
+                )
+                  div(class="year") #{item.data.itemDate.toISOString().slice(0,10)}
+                  div(
+                    class="ev-item--calender-border"
+                  )
+                    div(class="month")  #{item.getMonth()}
+                    div(class="date")   #{item.data.itemDate.getDate()}
+
+                    div(class="day") PIRMADIENIS
+                  div(class="time") 18.30
+          div(class="ev-item--footer")
+            h5 #{item.data.itemTitle}

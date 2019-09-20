@@ -1,0 +1,69 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css')
+    script (src='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js')
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/foundation-6/css/foundation.css')
+    link(rel='stylesheet', href='/foundation-6/css/app.css')
+    link(href='https://fonts.googleapis.com/css?family=Fjalla+One&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Oswald&display=swap' rel='stylesheet')
+    script(async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+    script
+      | (adsbygoogle = window.adsbygoogle || []).push({
+      | google_ad_client: "ca-pub-9741829996788720",
+      | enable_page_level_ads: true
+      | });
+  body
+    div(class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium")
+      button(class="menu-icon" type="button" data-toggle="example-menu")
+      div(class="title-bar-title")
+        Menu
+
+    div(class="top-bar" id="example-menu")
+      div(class="top-bar-left")
+        ul(class="dropdown menu" data-dropdown-menu)
+          li(class="menu-text") Afiša.lt
+
+          li
+            a(href="#")
+              One
+            ul(class="menu vertical")
+              li
+                a(href="#") One
+              li
+                a(href="#") Two
+              li
+                a(href="#") Three
+      div(class="top-bar-right")
+        ul(class="menu")
+          li
+            input(type="search" placeholder="Search")
+          li
+            button(type="button" class="button")
+              Search
+
+    #content(class='grid-container')
+      block menu
+        menu
+          ul#menu(class='menu')
+            li
+              a(href="/"      ) Home
+            li
+              a(href="/list" ) List
+            li
+              a(href="/about" ) About
+
+      block content
+      block footer
+        footer
+          span Copyright 2019
+    script(src='/foundation-6/js/vendor/jquery.js')
+    script(src='/foundation-6/js/vendor/what-input.js')
+    script(src='/foundation-6/js/vendor/foundation.js')
+    script(src='/foundation-6/js/app.js')

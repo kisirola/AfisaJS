@@ -1,0 +1,134 @@
+body {
+
+}
+div.item {
+
+  color: #37474f;
+
+  /*border-radius: 1rem 0 0 0;
+  */
+  margin: 0.3rem;
+}
+
+div.item div.content {
+
+
+}
+
+div.item > div.content > div.header {
+
+  background-image: linear-gradient(#b0bec5, #FFF );
+  border-radius: 0.9rem 0.3rem 0.3rem 0.3rem;
+}
+
+div.item > div.content > div.header > div.ev-item--image {
+  width: 100%;
+  padding-bottom: 160%;
+  border-radius: 0.9rem 0.3rem 0.3rem 0.3rem;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+
+}
+
+div.item > div.content > div.header > div.ev-item--image > img {
+  border-radius: 0.9rem 0.3rem 0.3rem 0.3rem;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+div.ev-item--calender {
+  font-family: 'Oswald', sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #37474f;
+  /*border: 0.04rem solid #c8d2d2;*/
+  border-radius: 0.7rem 0.3rem 0.3rem 0.3rem;
+  text-align: center;
+  width: 5rem;
+  position: absolute;
+  top:  0.3rem;
+  left: 0.3rem;
+  padding: 0.1em;
+}
+div.ev-item--calender-border {
+  border: 0.04rem solid #b0bec5;
+  border-radius: 0.5rem 0.2rem 0.2rem 0.2rem;
+  margin: 0.1em;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  padding:0.4em;
+  del_border: 1px solid blue;
+}
+div.ev-item--calender div.year {
+  color: #37474f;
+  position: absolute;
+  top:  0rem;
+  left: 0.7rem;
+  font-size: 0.6rem;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  margin: 0;
+}
+
+div.ev-item--calender div.date {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+div.ev-item--calender div.day {
+  color: #263238;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 0.0rem;
+}
+
+div.ev-item--calender div.time {
+  color: #37474f;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 0.7rem;
+  text-align: right;
+  margin-right: 0.4rem;
+}
+
+div.item > div.content > div.header > div.right {
+  flex: auto;
+  border: 1px dotted green;
+  position: relative;
+
+}
+
+div.item > div.content > div.header > div.right > div.title {
+  position: absolute;
+  display: flex;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+div.item > div.content > div.header > div.right > div.title > div.blank {
+
+  width: 15rem;
+}
+div.item > div.content > div.header > div.right > div.title > div.text {
+  padding-left: 1rem;
+  overflow: scroll;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 0.5rem, rgba(255, 255, 255, 1));
+
+}
+
+div.ev-item--footer {
+  min-height: 9rem;
+  margin-top: 0.5rem;
+  borderr: 1px solid red;
+
+}
+div.ev-item--footer h5 {
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}

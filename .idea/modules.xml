@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AfisaJS.iml" filepath="$PROJECT_DIR$/AfisaJS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/afisajs/afisajs.iml" filepath="$PROJECT_DIR$/afisajs/afisajs.iml" />
     </modules>
   </component>
 </project>
